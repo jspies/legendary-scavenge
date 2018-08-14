@@ -1,60 +1,51 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import predatorData from '@/assets/predator.json'
+import predatorData from '@/assets/2534.json'
 import achievements from './resources/achievements'
 
 Vue.use(Vuex)
 
 const state = {
-  predatorItems: {},
-  predatorData: []
+  bits: [],
+  personal: []
 }
 
 const getters = {
   predatorItems: state => {
-    state.predatorData.map((item) => {
-      if (state.predatorItems[item.item]) {
-        item.checked = true
+    state.bits.map((bit, index) => {
+      if (state.personal.bits && state.personal.bits.indexOf(index) > -1) {
+        bit.checked = true
       }
+      bit.extra = predatorData.items[bit.id]
     })
-    return state.predatorData
+
+    return state.bits
   }
 }
 
 const actions = {
-  addItem ({commit}, item) {
-    commit('addItem', item)
+  getPersonalAchievement ({commit}, apikey) {
+    achievements.getPersonalAchievement(achievements.ACHIEVEMENTS.PREDATOR1, apikey)
+    .then((response) => {
+      commit('storePersonal', response)
+    })
   },
 
-  removeItem ({commit}, item) {
-    commit('removeItem', item)
-  },
-
-  loadItems ({commit}) {
-    let items = localStorage.getItem('predator')
-    items = JSON.parse(items)
-    commit('storeItems', items)
-    commit('storeData')
+  loadAchievement ({commit}) {
+    achievements.getAchievement(achievements.ACHIEVEMENTS.PREDATOR1)
+    .then((response) => {
+      commit('storeBits', response)
+    })
   }
 }
 
 const mutations = {
-  storeItems (state, items) {
-    state.predatorItems = items
+  storeBits (state, bits) {
+    state.bits = bits
   },
 
-  storeData (state) {
-    state.predatorData = predatorData
-  },
-
-  addItem (state, item) {
-    state.predatorItems[item] = true
-    localStorage.setItem('predator', JSON.stringify(state.predatorItems))
-  },
-
-  removeItem (state, item) {
-    delete state.predatorItems[item]
-    localStorage.setItem('predator', JSON.stringify(state.predatorItems))
+  storePersonal (state, bits) {
+    state.personal = bits
   }
 }
 

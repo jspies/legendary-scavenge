@@ -1,0 +1,22 @@
+{
+  "id": 2534,
+  "items": {
+    "23637": {"itemLink": "https://wiki.guildwars2.com/wiki/Sweptweave_Schematic", "weapon": "Predator", "stage": 1, "location": "Blazeridge Steppes", "sublocation": "Tumok's Last Stand", "action": "Purchased from Torruh (heart vendor)"},
+    "70953": {"itemLink": "https://wiki.guildwars2.com/wiki/Decrypted_Weapons_Research", "weapon": "Predator", "stage":	1, "location": "Bloodtide Coast", "sublocation":	"Portmatt's Promontory JP", "action":	"Finish JP and interact with unlabled console on the floating platform"},
+    "76408": {"itemLink": "https://wiki.guildwars2.com/wiki/Scarlet%27s_Research_Notes", "weapon": "Predator", "stage":	1, "location": "Dry Top", "sublocation": "Town of Prosperity", "action":	"collect scarlet's research notes from hideout"},
+    "72174": {"itemLink": "https://wiki.guildwars2.com/wiki/Iron_Legion_Schematics", "weapon": "Predator", "stage":	1, "location": "Fields of Ruin", "sublocation":	"Warrior's Crown", "action":	"Purchase from Crunchbone (heart vendor)"},
+    "72574": {"itemLink": "https://wiki.guildwars2.com/wiki/Molten_Engineer_Notes", "weapon": "Predator", "stage":	1, "location": "Fractal", "sublocation":	"Molten Furnace", "action":	"Chest at end"},
+    "76126": {"itemLink": "https://wiki.guildwars2.com/wiki/Mai_Trin_Airship_Weapons_Manual", "weapon": "Predator", "stage":	1, "location": "Fractal", "sublocation":	"Mai Trin Boss", "action":	"Chest at end"},
+    "73568": {"itemLink": "https://wiki.guildwars2.com/wiki/Thaumanova_Research_Notes", "weapon": "Predator", "stage":	1, "location": "Fractal", "sublocation":	"Thaumanova", "action":	"Chest at end"},
+    "75366": {"itemLink": "https://wiki.guildwars2.com/wiki/Salvaged_Aetherblade_Power_Source", "weapon": "Predator", "stage":	1, "location": "Gendarran Fields", "sublocation":	"Broadhollow Bluffs", "action":	"Aetherblade JP, collect power source"},
+    "74088": {"itemLink": "https://wiki.guildwars2.com/wiki/Scarlet%27s_Prototype_Mechanism", "weapon": "Predator", "stage":	1, "location": "Lornar's Pass", "sublocation":	"Durmand Priory", "action":	"collect mechanism from Scarlet's hideout (under, in hidden cave)"},
+    "75867": {"itemLink": "https://wiki.guildwars2.com/wiki/%22Black_Powder_and_Its_Uses%22", "weapon": "Predator", "stage":	1, "location": "Lornar's Pass", "sublocation":	"Durmand Priory", "action":	"read Black Powder and Its Uses in Durmand Priory Library (instance)"},
+    "72492": {"itemLink": "https://wiki.guildwars2.com/wiki/Dredge_Sniper_Rifle", "weapon": "Predator", "stage":	1, "location": "Dredgehaunt Cliffs", "sublocation":	"Grey Road", "action":	"Kill the Grey Terror (event boss)"},
+    "76724": {"itemLink": "https://wiki.guildwars2.com/wiki/Functional_Steam_Gizmo", "weapon": "Predator", "stage":	1, "location": "Lornar's Pass", "sublocation":	"various", "action":	"kill steam creatures"},
+    "8733":  {"itemLink": "https://wiki.guildwars2.com/wiki/Experimental_Rifle", "weapon": "Predator", "stage":	1, "location": "Malchor's Leap", "sublocation":	"Karst Plains", "action":	"purchase from Livilla (post event)"},
+    "23686": {"itemLink": "https://wiki.guildwars2.com/wiki/Intercepted_Inquest_Calculations", "weapon": "Predator", "stage":	1, "location": "Malchor's Leap", "sublocation":	"Jinx Isle", "action":	"purchased from EVAC-9000 (post event)"},
+    "73463": {"itemLink": "https://wiki.guildwars2.com/wiki/Asuran_Experimental_Weapon", "weapon": "Predator", "stage":	1, "location": "Mount Maelstrom", "sublocation":	"Quandry Scratch", "action":	"collect experimental weapon"},
+    "72552": {"itemLink": "https://wiki.guildwars2.com/wiki/Pact_Sniper_Rifle", "weapon": "Predator", "stage":	1, "location": "Verdant Brink", "sublocation":	"Dry Step Mesas", "action":	"collect barrel of sniper rifles"},
+    "71143": {"itemLink": "https://wiki.guildwars2.com/wiki/Prototype_Dredge_Weapon_(trophy)", "weapon": "Predator", "stage":	1, "location": "Wayfarer Foothills", "sublocation":	"Molebria", "action":	"collect prototype dredge weapon"}
+  }
+}

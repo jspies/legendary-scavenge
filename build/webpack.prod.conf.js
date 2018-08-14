@@ -8,6 +8,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 var OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+var S3Plugin = require('webpack-s3-plugin')
 
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -96,7 +97,24 @@ var webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+    new S3Plugin({
+      // Exclude uploading of html
+      // exclude: /.*\.html$/,
+      // s3Options are required
+      s3Options: {
+        accessKeyId: config.build.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: config.build.env.AWS_SECRET_ACCESS_KEY,
+        region: config.build.env.AWS_REGION
+      },
+      s3UploadOptions: {
+        Bucket: config.build.env.AWS_BUCKET
+      },
+      cdnizerOptions: {
+        defaultCDNBase: 'http://v2.internal.snapstory.co.s3-website-us-east-1.amazonaws.com'
+      },
+      directory: 'dist/'
+    }),
   ]
 })
 
